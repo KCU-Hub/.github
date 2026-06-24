@@ -1,0 +1,36 @@
+name: 문서 수정
+description: README, 운영 문서, 링크, 안내 문구 수정을 제안합니다.
+title: "[docs] "
+labels:
+  - docs
+body:
+  - type: textarea
+    id: target
+    attributes:
+      label: 수정할 위치
+      description: 파일명, 섹션, 링크를 적어 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 수정 이유
+      description: 실제 파일 구조와 다르거나, 오래되었거나, 다음 사람이 이해하기 어려운 지점을 적어 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 제안 문구
+      description: 가능하면 바로 반영할 수 있는 문장으로 적어 주세요.
+    validations:
+      required: false
+  - type: checkboxes
+    id: public-safety
+    attributes:
+      label: 공개 범위 확인
+      options:
+        - label: 개인 정보, 이메일, 계정 정보, 내부 식별자를 포함하지 않았습니다.
+          required: true
+        - label: 합의되지 않은 공식 입장이나 KPI를 확정 표현으로 쓰지 않았습니다.
+          required: true

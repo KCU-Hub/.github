@@ -1,2 +1,25 @@
-# .github
-KCU-Hub org profile and durable knowledge operations docs
+# KCU-Hub 운영 문서
+
+KCU-Hub는 GitHub org를 중심으로 학부, 동아리, 스터디, 프로젝트의 지식 전수 기록을 오래 남기는 운영 공간입니다. 실시간 대화는 외부 채널에서 처리하고, GitHub에는 다시 찾아볼 수 있는 산출물과 협업 이력을 남깁니다.
+
+## 이 repo의 역할
+
+- org 첫 화면에 표시되는 프로필 README를 관리합니다.
+- repo 생성 기준, 채널 분담, 운영자 체크리스트를 문서로 둡니다.
+- 새 repo 제안과 문서 수정 요청을 Issue 템플릿으로 받습니다.
+- org 전체에 재사용할 수 있는 PR 템플릿을 제공합니다.
+
+## 문서
+
+- [운영 모델](docs/operating-model.md)
+- [repo 구조 제안](docs/repo-structure.md)
+- [채널 역할 분담](docs/channel-policy.md)
+- [운영자 체크리스트](docs/maintainer-checklist.md)
+
+## 운영 원칙
+
+- GitHub는 오래 남길 지식, 산출물, 의사결정 기록을 맡습니다.
+- 실시간 공지, 출석성 확인, 잡담, 빠른 질의응답은 외부 채널을 우선합니다.
+- 개인 정보, 계정 정보, 내부 식별자, 민감한 상담 내용은 repo와 Issue에 남기지 않습니다.
+- 기존 커뮤니티 앱은 KCU-Hub의 메인 커뮤니티가 아니라 개별 프로젝트 repo로 취급합니다.
+- repo를 늘리기 전에 유지보수자, 정리 주기, 첫 3개 산출물을 먼저 정합니다.
