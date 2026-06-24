@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">KCU-Hub 기록 흐름</title>
+  <desc id="desc">외부 채널에서 빠르게 이야기하고, GitHub Issue와 문서, 프로젝트 기록으로 정리하는 흐름</desc>
+  <rect width="960" height="640" fill="#fbfaf7"/>
+  <rect x="70" y="72" width="820" height="496" rx="18" fill="#ffffff" stroke="#d8dee2" stroke-width="3"/>
+  <text x="110" y="132" fill="#192024" font-family="Arial, sans-serif" font-size="34" font-weight="700">대화는 빠르게, 기록은 오래</text>
+  <text x="110" y="172" fill="#576166" font-family="Arial, sans-serif" font-size="20">KCU-Hub는 학우가 다시 찾을 수 있는 결과만 GitHub에 정리합니다.</text>
+  <g transform="translate(110 235)">
+    <rect width="200" height="128" rx="12" fill="#edf5f2" stroke="#14745f" stroke-width="3"/>
+    <text x="24" y="46" fill="#14745f" font-family="Arial, sans-serif" font-size="22" font-weight="700">외부 채널</text>
+    <text x="24" y="82" fill="#192024" font-family="Arial, sans-serif" font-size="18">공지, 질문, 조율</text>
+  </g>
+  <path d="M330 300H435" fill="none" stroke="#1f5f8b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M435 300l-20-16v32z" fill="#1f5f8b"/>
+  <g transform="translate(455 235)">
+    <rect width="200" height="128" rx="12" fill="#eef3fa" stroke="#1f5f8b" stroke-width="3"/>
+    <text x="24" y="46" fill="#1f5f8b" font-family="Arial, sans-serif" font-size="22" font-weight="700">GitHub Issue</text>
+    <text x="24" y="82" fill="#192024" font-family="Arial, sans-serif" font-size="18">제안, 오류, TODO</text>
+  </g>
+  <path d="M675 300H780" fill="none" stroke="#b56b00" stroke-width="6" stroke-linecap="round"/>
+  <path d="M780 300l-20-16v32z" fill="#b56b00"/>
+  <g transform="translate(110 410)">
+    <rect width="200" height="98" rx="12" fill="#fff7e8" stroke="#b56b00" stroke-width="3"/>
+    <text x="24" y="42" fill="#b56b00" font-family="Arial, sans-serif" font-size="22" font-weight="700">문서</text>
+    <text x="24" y="72" fill="#192024" font-family="Arial, sans-serif" font-size="18">요약과 참고 링크</text>
+  </g>
+  <g transform="translate(380 410)">
+    <rect width="200" height="98" rx="12" fill="#f8eeee" stroke="#a23a35" stroke-width="3"/>
+    <text x="24" y="42" fill="#a23a35" font-family="Arial, sans-serif" font-size="22" font-weight="700">스터디</text>
+    <text x="24" y="72" fill="#192024" font-family="Arial, sans-serif" font-size="18">회차별 결과</text>
+  </g>
+  <g transform="translate(650 410)">
+    <rect width="200" height="98" rx="12" fill="#edf5f2" stroke="#14745f" stroke-width="3"/>
+    <text x="24" y="42" fill="#14745f" font-family="Arial, sans-serif" font-size="22" font-weight="700">프로젝트</text>
+    <text x="24" y="72" fill="#192024" font-family="Arial, sans-serif" font-size="18">README와 회고</text>
+  </g>
+  <path d="M555 363C555 388 210 382 210 410" fill="none" stroke="#d8dee2" stroke-width="4" stroke-linecap="round"/>
+  <path d="M555 363C555 388 480 382 480 410" fill="none" stroke="#d8dee2" stroke-width="4" stroke-linecap="round"/>
+  <path d="M555 363C555 388 750 382 750 410" fill="none" stroke="#d8dee2" stroke-width="4" stroke-linecap="round"/>
+</svg>

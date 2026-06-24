@@ -2,9 +2,15 @@
 
 KCU-Hub는 GitHub org를 중심으로 학부, 동아리, 스터디, 프로젝트의 지식 전수 기록을 오래 남기는 운영 공간입니다. 실시간 대화는 외부 채널에서 처리하고, GitHub에는 다시 찾아볼 수 있는 산출물과 협업 이력을 남깁니다.
 
+학우가 처음 보는 안내는 GitHub Pages로 제공합니다.
+
+- Pages: https://kcu-hub.github.io/.github/
+- Markdown 가이드: [docs/contributor-guide.md](docs/contributor-guide.md)
+
 ## 이 repo의 역할
 
 - org 첫 화면에 표시되는 프로필 README를 관리합니다.
+- GitHub Pages 기반 학우용 참여 가이드를 관리합니다.
 - repo 생성 기준, 채널 분담, 운영자 체크리스트를 문서로 둡니다.
 - 새 repo 제안과 문서 수정 요청을 Issue 템플릿으로 받습니다.
 - org 전체에 재사용할 수 있는 PR 템플릿을 제공합니다.
@@ -12,6 +18,7 @@ KCU-Hub는 GitHub org를 중심으로 학부, 동아리, 스터디, 프로젝트
 ## 문서
 
 - [운영 모델](docs/operating-model.md)
+- [기여자 가이드](docs/contributor-guide.md)
 - [repo 구조 제안](docs/repo-structure.md)
 - [채널 역할 분담](docs/channel-policy.md)
 - [운영자 체크리스트](docs/maintainer-checklist.md)

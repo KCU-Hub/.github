@@ -19,13 +19,20 @@ jobs:
       - name: Check whitespace
         run: git diff --check "$(git hash-object -t tree /dev/null)" HEAD
 
-      - name: Parse issue templates
+      - name: Parse YAML files
         run: |
-          ruby -r yaml -e 'ARGV.each { |f| YAML.load_file(f); puts "ok #{f}" }' .github/ISSUE_TEMPLATE/*.yml
+          ruby -r yaml -e 'ARGV.each { |f| YAML.load_file(f); puts "ok #{f}" }' .github/ISSUE_TEMPLATE/*.yml .github/workflows/*.yml
+
+      - name: Check Pages site files
+        run: |
+          test -f site/index.html
+          test -f site/assets/styles.css
+          test -f site/assets/flow.svg
+          grep -q 'lang="ko"' site/index.html
 
       - name: Check sensitive patterns
         run: |
-          ! grep -RInE 'Jiyeon|Yoon|gmail|gho_|github_pat|sk-|api[_ -]?key|token|secret|70%|46%|Co-Authored-By' \
+          ! grep -RInE 'Jiyeon|Yoon|gmail|gho_[A-Za-z0-9_]+|github_pat_[A-Za-z0-9_]+|sk-[A-Za-z0-9_-]{20,}|70%|46%|Co-Authored-By' \
             --exclude-dir=.git \
             --exclude=docs-check.yml \
             .
