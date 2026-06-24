@@ -1,0 +1,31 @@
+name: Docs check
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check whitespace
+        run: git diff --check "$(git hash-object -t tree /dev/null)" HEAD
+
+      - name: Parse issue templates
+        run: |
+          ruby -r yaml -e 'ARGV.each { |f| YAML.load_file(f); puts "ok #{f}" }' .github/ISSUE_TEMPLATE/*.yml
+
+      - name: Check sensitive patterns
+        run: |
+          ! grep -RInE 'Jiyeon|Yoon|gmail|gho_|github_pat|sk-|api[_ -]?key|token|secret|70%|46%|Co-Authored-By' \
+            --exclude-dir=.git \
+            --exclude=docs-check.yml \
+            .
